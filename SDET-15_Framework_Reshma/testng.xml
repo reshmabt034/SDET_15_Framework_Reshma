@@ -1,0 +1,22 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test thread-count="5" parallel="tests" name="Test">
+    <classes>
+      <class name="com.crm.comcast.VtigerTest.CreateOrganizationWithIndustryTest"/>
+      <class name="com.crm.comcast.LeadsTest.TL_10_CreateNewLeadByAssignToUserOrGroupTest"/>
+      <class name="com.crm.comcast.Practice.SampleJDBCExecuteQuery"/>
+      <class name="com.crm.comcast.LeadsTest.TL_09_CreateNewLeadBySelectingDifferentRatingFromDDTest"/>
+      <class name="com.crm.comcast.Practice.DemoRead"/>
+      <class name="com.crm.comcast.Practice.CreateOrganizationTest"/>
+      <class name="com.crm.comcast.VtigerTest.CreateContactWithOrganizationTest"/>
+      <class name="com.crm.comcast.Practice.DynamicWebTable"/>
+      <class name="com.crm.comcast.VtigerTest.CreateOrganizationTest"/>
+      <class name="com.crm.comcast.Practice.SampleJDBCExecuteUpdate"/>
+      <class name="com.crm.comcast.LeadsTest.TL_06_CreateNewLeadBySelectingDifferentLeadSourceFromDDTest"/>
+      <class name="com.crm.comcast.LeadsTest.TL_07_CreateNewLeadBySelectingDifferentIndustryFromDDTest"/>
+      <class name="com.crm.comcast.LeadsTest.TL_08_CreateNewLeadBySelectingLeadStatusFromDDTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
