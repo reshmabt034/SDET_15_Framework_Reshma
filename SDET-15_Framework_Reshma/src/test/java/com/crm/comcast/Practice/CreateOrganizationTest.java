@@ -4,9 +4,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -63,7 +65,16 @@ public class CreateOrganizationTest {
         String successMsg = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
         Assert.assertTrue(successMsg.contains("SkillRary"));
         System.out.println(successMsg);
-//	
+        
+        //  sign out of application
+		WebElement ele = driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"));
+		
+		Actions act = new Actions(driver);
+		
+		act.moveToElement(ele).perform();
+		driver.findElement(By.linkText("Sign Out")).click();
+
+		//	close driver
         
         driver.close();	   
         }

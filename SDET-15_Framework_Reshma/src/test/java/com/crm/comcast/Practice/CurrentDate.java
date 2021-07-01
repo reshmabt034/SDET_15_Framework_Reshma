@@ -38,8 +38,7 @@ public class CurrentDate {
 		
 		act.moveByOffset(10, 10).click();
 		
-	
-	
+		
 		WebElement src = driver.findElement(By.xpath("//input[@id='fromCity']"));
 		WebElement dest = driver.findElement(By.xpath("//input[@id='toCity']"));
 		

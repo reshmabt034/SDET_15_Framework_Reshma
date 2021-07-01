@@ -20,7 +20,7 @@ public class PropertyFileUtility {
 	
 	public String readDataFromPropertyFile(String key) throws Throwable
 	{
-		FileInputStream file = new FileInputStream("./commonData.properties");
+		FileInputStream file = new FileInputStream(IPathConstants.PROPERTYFILEPATH);
 		Properties prop = new Properties();
 		prop.load(file);	
 		String value = prop.getProperty(key);

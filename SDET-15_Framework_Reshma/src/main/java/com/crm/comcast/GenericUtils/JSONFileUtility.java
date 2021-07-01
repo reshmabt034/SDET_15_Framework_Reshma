@@ -22,7 +22,7 @@ public class JSONFileUtility {
 	public String readDataFromJSON(String key) throws Throwable
 	{   
 		//Read the data from json
-		FileReader inputFile = new FileReader("./commanData.json");
+		FileReader inputFile = new FileReader(IPathConstants.JSONPATH);
 		
 		//parse the json object into java data stream
 		JSONParser parser = new JSONParser();

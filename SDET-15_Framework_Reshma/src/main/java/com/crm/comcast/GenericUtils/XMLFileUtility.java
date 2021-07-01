@@ -18,7 +18,7 @@ public class XMLFileUtility {
 	public String readDataFromXml(String node) throws DocumentException
 	{
 		//Read the file from location
-		File inputfile = new File("./commonData.xml");
+		File inputfile = new File(IPathConstants.XMLPATH);
 		
 		//read the xml file from input
 		SAXReader reader = new SAXReader();
